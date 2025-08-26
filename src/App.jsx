@@ -1,10 +1,10 @@
+import Hero from "./sections/Hero";
+
 const App = () => {
   return (
-    <main>
-      <div>
-        <h1>Whats up ma trigga</h1>
-      </div>
-    </main>
+    <>
+      <Hero />
+    </>
   );
 };
 
