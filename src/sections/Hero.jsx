@@ -41,7 +41,11 @@ const Hero = () => {
               Hi, I'm Hyun, a developer based in New York with a passion for
               code.
             </p>
-            <Button />
+            <Button
+              className="md:w-80 md:h-16 w-60 h-12"
+              id="button"
+              text="See My Work"
+            />
           </div>
         </header>
         {/* right */}
