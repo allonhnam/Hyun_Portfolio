@@ -6,7 +6,7 @@ import gsap from "gsap";
 import AnimatedCounter from "../components/AnimatedCounter";
 
 const HeroExperience = lazy(() =>
-  import("../components/HeroModels/HeroExperience")
+  import("../components/models/HeroModels/HeroExperience")
 );
 
 const Hero = () => {
