@@ -27,7 +27,7 @@ export function Robo(props) {
       metalness: 0,
       roughness: 0.25,
       emissive: '#b7f7ff',
-      emissiveIntensity: 24, // 18–36 looks good
+      emissiveIntensity: 24,
       toneMapped: false
     }),
     []

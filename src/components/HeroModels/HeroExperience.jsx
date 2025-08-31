@@ -22,7 +22,7 @@ const HeroExperience = () => {
       <OrbitControls
         makeDefault
         enablePan={false}
-        enableZoom={!isTablet}
+        enableZoom={false}
         enableDamping
         dampingFactor={0.08}
         maxDistance={20}
