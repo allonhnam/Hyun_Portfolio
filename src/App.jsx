@@ -1,4 +1,4 @@
-import LogoSection from "./sections/LogoSection";
+// import LogoSection from "./sections/LogoSection";
 import NavBar from "./components/NavBar";
 import FeatureCards from "./sections/FeatureCards";
 import Hero from "./sections/Hero";
@@ -15,7 +15,7 @@ const App = () => {
       <NavBar />
       <Hero />
       <ShowcaseSection />
-      <LogoSection />
+      {/* <LogoSection /> */}
       <FeatureCards />
       <Experience />
       <TechStack />
