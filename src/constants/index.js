@@ -12,23 +12,31 @@ const navLinks = [
       link: "#skills",
     },
     {
-      name: "Testimonials",
-      link: "#testimonials",
+      name: "Contact",
+      link: "#contact",
     },
+    // {
+    //   name: "Testimonials",
+    //   link: "#testimonials",
+    // },
   ];
   
-  const words = [
-    { id: 'w-ideas-1', text: "Ideas", imgPath: "/images/ideas.svg" },
-    { id: 'w-concepts-1', text: "Concepts", imgPath: "/images/concepts.svg" },
-    { id: 'w-designs-1', text: "Designs", imgPath: "/images/designs.svg" },
-    { id: 'w-code-1', text: "Code", imgPath: "/images/code.svg" },
-  ];
+  // const words = [
+  //   { id: 'w-ideas-1', text: "Ideas", imgPath: "/images/ideas.svg" },
+  //   { id: 'w-concepts-1', text: "Concepts", imgPath: "/images/concepts.svg" },
+  //   { id: 'w-designs-1', text: "Designs", imgPath: "/images/designs.svg" },
+  //   { id: 'w-code-1', text: "Code", imgPath: "/images/code.svg" },
+  //   { id: 'w-ideas-2', text: "Ideas", imgPath: "/images/ideas.svg" },
+  //   { id: 'w-concepts-2', text: "Concepts", imgPath: "/images/concepts.svg" },
+  //   { id: 'w-designs-2', text: "Designs", imgPath: "/images/designs.svg" },
+  //   { id: 'w-code-2', text: "Code", imgPath: "/images/code.svg" },
+  // ];
   
   const counterItems = [
     { value: 3, suffix: "+", label: "Years of Experience" },
     { value: 1000, suffix: "+", label: "Satisfied Clients" },
-    { value: 108, suffix: "+", label: "Completed Projects" },
-    { value: 90, suffix: "%", label: "Client Retention Rate" },
+    { value: 25, suffix: "%+", label: "Revenue Increase" },
+    { value: 90, suffix: "%+", label: "Client Retention Rate" },
   ];
   
   const logoIconsList = [
@@ -70,18 +78,18 @@ const navLinks = [
   const abilities = [
     {
       imgPath: "/images/seo.png",
-      title: "Quality Focus",
-      desc: "Delivering high-quality results while maintaining attention to every detail.",
+      title: "Engineering Excellence",
+      desc: "Building full-stack systems that improve performance, scale reliably, and cut costs through smart engineering",
     },
     {
       imgPath: "/images/chat.png",
-      title: "Reliable Communication",
-      desc: "Keeping you updated at every step to ensure transparency and clarity.",
+      title: "Clear Collaboration",
+      desc: "Working across teams and functions to align goals, improve workflows, and deliver measurable business impact",
     },
     {
       imgPath: "/images/time.png",
-      title: "On-Time Delivery",
-      desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+      title: "On-Time Results",
+      desc: "Driving projects from design to deployment on schedule, improving efficiency and ensuring quality outcomes",
     },
   ];
   
@@ -134,7 +142,7 @@ const navLinks = [
       rotation: [0, 0, 0],
     },
     {
-      name: "Project Manager",
+      name: "Product Manager",
       modelPath: "/models/git-svg-transformed.glb",
       scale: 0.05,
       rotation: [0, -Math.PI / 4, 0],
@@ -143,39 +151,40 @@ const navLinks = [
   
   const expCards = [
     {
-      review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+      review: "Master of Science in Computer Science, Specialization in Artificial Intelligence",
       imgPath: "/images/exp1.png",
       logoPath: "/images/logo1.png",
-      title: "Frontend Developer",
-      date: "January 2023 - Present",
+      title: "Ubliss Medical Aesthetics - Founding Software Developer",
+      date: "July 2023 - Present",
       responsibilities: [
-        "Developed and maintained user-facing features for the Hostinger website.",
-        "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-        "Optimized web applications for maximum speed and scalability.",
+        "Led the full product lifecycle, working cross-functionally with the founder, UI/UX designer, SEO marketer, and software engineer, resulting in a 20% increase in company revenue.",
+        "Integrated AI-powered APIs to enable multilingual translations, contributing to a 25% improvement in customer retention.",
+        "Spearheaded the adoption of a SaaS EMR solution, optimizing patient record management, curtailing workflow bottlenecks and curtailing external costs by 30%.",
+        "Revamped booking and checkout systems across Frontend and Backend based on Google Analytics insights, resulting in a 30% increase in user visits and 20% uplift in bookings.",
       ],
     },
     {
-      review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+      review: "Full Stack Software Engineering, Bootcamp Certification",
       imgPath: "/images/exp2.png",
       logoPath: "/images/logo2.png",
-      title: "Full Stack Developer",
-      date: "June 2020 - December 2023",
+      title: "Saleo - Software Engineer Intern",
+      date: "January 2025 - April 2025",
       responsibilities: [
-        "Led the development of Docker's web applications, focusing on scalability.",
-        "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-        "Contributed to open-source projects that were used with the Docker ecosystem.",
+        "Implemented optimized text search and replace functionalities utilizing Advanced Data Structures and Algorithms, resulting in a 30% increase in use efficiency and application performance.",
+        "Developed and integrated GraphQL APIs to streamline data fetching, reducing client-server requests by 20% and improving frontend performance and responsiveness.",
+        "Overhauled Backend Infrastructure, achieving a 10% reduction in backend response latency and reinforcing platform stability for enterprise deployments.",
       ],
     },
     {
-      review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+      review: "Bachelor of Business Administration in Finance and Mathematics",
       imgPath: "/images/exp3.png",
       logoPath: "/images/logo3.png",
-      title: "React Native Developer",
-      date: "March 2019 - May 2020",
+      title: "Flexport - Financial Data Analyst",
+      date: "July 2021 - June 2023",
       responsibilities: [
-        "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-        "Improved app performance and user experience through code optimization and testing.",
-        "Coordinated with the product team to implement features based on feedback.",
+        "Conducted analyses on over $1 million in financial transactions using SQL and created Data Visualizations that yielded actionable insights for strategic decision-making.",
+        "Partnered closely with the software engineering team, supplying essential freight data that enhanced the internal quoting system’s efficiency by over 20% by eliminating redundant data.",
+        "Executed daily Data Cleaning and Reporting, improving the accuracy of time and location data by 99% and providing clients with consistently reliable information",
       ],
     },
   ];
@@ -242,25 +251,19 @@ const navLinks = [
   
   const socialImgs = [
     {
-      name: "insta",
-      imgPath: "/images/insta.png",
+      name: "Github",
+      imgPath: "/images/github.png",
+      link: "https://github.com/allonhnam",
     },
     {
-      name: "fb",
-      imgPath: "/images/fb.png",
-    },
-    {
-      name: "x",
-      imgPath: "/images/x.png",
-    },
-    {
-      name: "linkedin",
+      name: "LinkedIn",
       imgPath: "/images/linkedin.png",
+      link: "https://www.linkedin.com/in/allonnam/",
     },
   ];
   
   export {
-    words,
+    // words,
     abilities,
     logoIconsList,
     counterItems,

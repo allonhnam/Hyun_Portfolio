@@ -49,16 +49,25 @@ const AppShowcase = () => {
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <a
+                href="https://www.ublissny.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/project1.png"
+                  alt="Ubliss Medical Aesthetics"
+                />
+              </a>
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                Ubliss Medical Aesthetics – Health and Aesthetics Technology
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                A multilingual AI-powered platform that streamlines bookings and
+                payments, giving clients an easy and personalized experience
+                across services.
               </p>
             </div>
           </div>
@@ -66,19 +75,28 @@ const AppShowcase = () => {
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
-                <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
-                />
+                <a
+                  href="https://ai-interviewer-one-eta.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/images/project2.png" alt="AI Interviewer" />
+                </a>
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>AI Interviewer - Conducts tailored job interviews</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <a
+                  href="https://allongenai.streamlit.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/images/project3.png" alt="GEN AI Studio" />
+                </a>
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>GEN AI Studio - Creates and edits images from text</h2>
             </div>
           </div>
         </div>

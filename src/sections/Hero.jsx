@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import Button from "../components/Button";
-import { words } from "../constants";
+// import { words } from "../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import AnimatedCounter from "../components/AnimatedCounter";
@@ -28,7 +28,7 @@ const Hero = () => {
         <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
           <div className="flex flex-col gap-7">
             <div className="hero-text">
-              <h1>
+              {/* <h1>
                 Shaping
                 <span className="slide">
                   <span className="wrapper">
@@ -47,15 +47,14 @@ const Hero = () => {
                     ))}
                   </span>
                 </span>
-              </h1>
+              </h1> */}
 
-              <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
+              <h1>Software Engineer</h1>
+              <h1>AI Insights & Product Growth</h1>
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I am Hyun, a developer based in New York with a passion for
-              code.
+              Hi, I am Hyun, a developer based in New York 🗽
             </p>
 
             <Button

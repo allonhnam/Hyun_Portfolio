@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { navLinks } from "../constants/index.js";
+import resumeUrl from "../assets/Hyun_Nam_Software_Engineer_Resume.pdf"
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -15,7 +16,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
+    <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
         <a className="logo" href="#hero">
           Hyun Nam
@@ -33,11 +34,17 @@ const NavBar = () => {
             ))}
           </ul>
         </nav>
-        <a href="#contact" className="contact-btn group">
-          <div className="inner">
-            <span>Resume</span>
-          </div>
-        </a>
+        <a
+      href={resumeUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="contact-btn group"
+    >
+      <div className="inner">
+        <span>Resume</span>
+      </div>
+    </a>
+
       </div>
     </header>
   );
