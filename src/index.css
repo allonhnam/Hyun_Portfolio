@@ -162,7 +162,7 @@ section {
     }
 
     .first-project-wrapper {
-      @apply h-full flex flex-col justify-between xl:w-[70%] ;
+      @apply h-full flex flex-col justify-between xl:w-[70%];
 
       .image-wrapper {
         @apply xl:h-[70vh] md:h-[50vh] h-96 relative;
@@ -298,25 +298,21 @@ section {
   }
 
   .footer {
-    @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-20 flex items-center justify-center;
-
+    @apply my-5 md:mt-5 mt-10 text-white-50 px-2 md:px-5 xl:px-5;
+  
     .footer-container {
-      @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 w-full;
+      @apply w-full max-w-6xl mx-auto flex flex-col items-center justify-center gap-4;
     }
-
+  
     p {
-      @apply text-center md:text-start cursor-pointer;
+      @apply text-center;
     }
-
+  
     .socials {
       @apply flex items-center justify-center gap-5;
-
+  
       .icon {
         @apply border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-500 hover:bg-black-50;
-      }
-
-      img {
-        @apply inline-block;
       }
     }
   }

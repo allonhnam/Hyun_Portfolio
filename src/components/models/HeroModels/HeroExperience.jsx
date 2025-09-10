@@ -9,7 +9,6 @@ import Particles from './Particles'
 import { Robo } from './Robo'
 
 const HeroExperience = () => {
-  const isTablet = useMediaQuery({ query: '(max-width: 1024px)' })
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
   return (
@@ -27,8 +26,8 @@ const HeroExperience = () => {
         dampingFactor={0.08}
         maxDistance={20}
         minDistance={5}
-        minPolarAngle={Math.PI / 5}
-        maxPolarAngle={Math.PI / 2}
+        minPolarAngle={isMobile ? Math.PI / 2 : Math.PI / 5}
+        maxPolarAngle={isMobile ? Math.PI / 2 : Math.PI / 2}
       />
 
       <AdaptiveDpr />

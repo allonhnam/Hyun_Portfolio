@@ -1,27 +1,20 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
 import TitleHeader from "../components/TitleHeader";
-import ContactExperience from "../components/models/contact/ContactExperience";
 
 const Contact = () => {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    setLoading(true); // Show loading state
-
+    setLoading(true);
     try {
       await emailjs.sendForm(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -29,37 +22,33 @@ const Contact = () => {
         formRef.current,
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
-
-      // Reset form and stop loading
       setForm({ name: "", email: "", message: "" });
-    } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
+    } catch (err) {
+      console.error("EmailJS Error:", err);
     } finally {
-      setLoading(false); // Always stop loading, even on error
+      setLoading(false);
     }
   };
 
   return (
-    <section id="contact" className="flex-center section-padding">
-      <div className="w-full h-full md:px-10 px-5">
+    <section id="contact" className="section-padding">
+      <div className="w-full max-w-7xl mx-auto px-4 md:px-10">
         <TitleHeader
           title="Get in Touch – Let’s Connect"
           sub="Have questions or ideas? Let’s talk!"
         />
-        <div className="mt-16 px-50">
-          <div className="xl:col-span-5">
-            <div className="flex-center card-border rounded-xl p-10">
-              <form
-                ref={formRef}
-                onSubmit={handleSubmit}
-                className="w-full flex flex-col gap-7"
-              >
+
+        {/* width-controlled wrapper, no odd padding */}
+        <div className="mt-10 w-full">
+          <div className="mx-auto w-full max-w-md sm:max-w-lg md:max-w-2xl">
+            <div className="card-border rounded-xl p-6 md:p-10">
+              <form ref={formRef} onSubmit={handleSubmit} className="w-full flex flex-col gap-6">
                 <div>
                   <label htmlFor="name">Name</label>
                   <input
-                    type="text"
                     id="name"
                     name="name"
+                    type="text"
                     value={form.name}
                     onChange={handleChange}
                     placeholder="What’s your name?"
@@ -70,9 +59,9 @@ const Contact = () => {
                 <div>
                   <label htmlFor="email">Email</label>
                   <input
-                    type="email"
                     id="email"
                     name="email"
+                    type="email"
                     value={form.email}
                     onChange={handleChange}
                     placeholder="What’s your email address?"
@@ -85,10 +74,10 @@ const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
+                    rows="5"
                     value={form.message}
                     onChange={handleChange}
                     placeholder="How can I help you?"
-                    rows="5"
                     required
                   />
                 </div>
@@ -96,9 +85,7 @@ const Contact = () => {
                 <button type="submit">
                   <div className="cta-button group">
                     <div className="bg-circle" />
-                    <p className="text">
-                      {loading ? "Sending..." : "Send Message"}
-                    </p>
+                    <p className="text">{loading ? "Sending..." : "Send Message"}</p>
                     <div className="arrow-wrapper">
                       <img src="/images/arrow-down.svg" alt="arrow" />
                     </div>
