@@ -73,6 +73,21 @@ const AppShowcase = () => {
           </div>
 
           <div className="project-list-wrapper overflow-hidden">
+            <div className="project" ref={ycDirectoryRef}>
+              <div className="image-wrapper bg-[#FFE7EB]">
+                <a
+                  href="https://ai-coach-dusky.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/images/project3.png" alt="AI-Coach" />
+                </a>
+              </div>
+              <h2>
+                AI Coach - Personal conversational coach for your learning
+              </h2>
+            </div>
+
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <a
@@ -85,19 +100,7 @@ const AppShowcase = () => {
               </div>
               <h2>AI Interviewer - Conducts tailored job interviews</h2>
             </div>
-
-            <div className="project" ref={ycDirectoryRef}>
-              <div className="image-wrapper bg-[#FFE7EB]">
-                <a
-                  href="https://allongenai.streamlit.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="/images/project3.png" alt="GEN AI Studio" />
-                </a>
-              </div>
-              <h2>GEN AI Studio - Creates and edits images from text</h2>
-            </div>
+            
           </div>
         </div>
       </div>
